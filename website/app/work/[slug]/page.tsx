@@ -61,12 +61,12 @@ export default async function WorkDetailPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* 3 Pillars Row: cards with exact 20px gap, 492px width, border-[#2ABCFF] */}
+          {/* 3 Pillars Row: cards with exact 20px gap, 492px width, border-zinc-300 */}
           <div className="flex flex-col lg:flex-row items-stretch justify-start gap-[20px] mt-[48px] sm:mt-[60px]">
             {project.problemSection.cards.map((card, idx) => (
               <div
                 key={idx}
-                className="w-full lg:w-[492px] min-h-[288px] px-[32px] pt-[40px] pb-[36px] bg-white border border-[#2ABCFF] flex flex-col justify-start flex-shrink-0"
+                className="w-full lg:w-[492px] min-h-[288px] px-[32px] pt-[40px] pb-[36px] bg-white border border-zinc-300 flex flex-col justify-start flex-shrink-0"
               >
                 {/* Tag: 16px font, 32px leading */}
                 <span className="text-zinc-500 text-[16px] leading-[32px] font-normal tracking-wide uppercase">
@@ -135,6 +135,182 @@ export default async function WorkDetailPage({ params }: PageProps) {
               />
             </div>
           </div>
+        </section>
+      )}
+
+      {/* Multi-Section Rich Showcase Blocks (e.g. Sagehill Layout with 117px top gap and gap-28) */}
+      {project.showcaseBlocks && (
+        <section className="w-full max-w-[1720px] mx-auto pt-[117px] pb-[80px] sm:pb-[140px] flex flex-col items-start gap-[72px] sm:gap-[112px]">
+          {/* Showcase Section 1 */}
+          {project.showcaseBlocks.section1 && (
+            <div className="w-full flex flex-col justify-start items-start gap-[36px] sm:gap-[56px]">
+              {/* Heading + Description: max-w-[1140px] */}
+              <div className="w-full max-w-[1140px] flex flex-col justify-start items-start gap-[20px] sm:gap-[28px]">
+                <h2 className="w-full text-neutral-900 text-[28px] sm:text-[34px] lg:text-4xl font-normal leading-[36px] sm:leading-[42px] lg:leading-[48px]">
+                  {project.showcaseBlocks.section1.title}
+                </h2>
+                <p className="w-full text-zinc-900 text-[16px] sm:text-[18px] lg:text-xl font-normal leading-[26px] sm:leading-[30px] lg:leading-8">
+                  {project.showcaseBlocks.section1.description}
+                </p>
+              </div>
+
+              {/* Images Grid Stack */}
+              <div className="w-full flex flex-col justify-start items-start gap-[16px] sm:gap-[20px]">
+                {/* 1. Full-width Banner 1 */}
+                <div className="w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.showcaseBlocks.section1.images.banner1}
+                    alt={`${project.title} showcase banner 1`}
+                    className="w-full h-auto object-cover object-center"
+                  />
+                </div>
+
+                {/* 2. Full-width Banner 2 */}
+                <div className="w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.showcaseBlocks.section1.images.banner2}
+                    alt={`${project.title} showcase banner 2`}
+                    className="w-full h-auto object-cover object-center"
+                  />
+                </div>
+
+                {/* 3. Row of 2 Images (850x574 each) */}
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section1.images.row1Left}
+                      alt={`${project.title} showcase item 1`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section1.images.row1Right}
+                      alt={`${project.title} showcase item 2`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                {/* 4. Full-width Banner 3 */}
+                <div className="w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.showcaseBlocks.section1.images.banner3}
+                    alt={`${project.title} showcase banner 3`}
+                    className="w-full h-auto object-cover object-center"
+                  />
+                </div>
+
+                {/* 5. Full-width Banner 4 */}
+                <div className="w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.showcaseBlocks.section1.images.banner4}
+                    alt={`${project.title} showcase banner 4`}
+                    className="w-full h-auto object-cover object-center"
+                  />
+                </div>
+
+                {/* 6. Row of 2 Images (850x574 each) */}
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section1.images.row2Left}
+                      alt={`${project.title} showcase item 3`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section1.images.row2Right}
+                      alt={`${project.title} showcase item 4`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Showcase Section 2 */}
+          {project.showcaseBlocks.section2 && (
+            <div className="w-full flex flex-col justify-start items-start gap-[28px] sm:gap-[40px]">
+              {/* Heading + Description: max-w-[1140px] */}
+              <div className="w-full max-w-[1140px] flex flex-col justify-start items-start gap-[16px] sm:gap-[20px]">
+                <h2 className="w-full text-neutral-900 text-[28px] sm:text-[34px] lg:text-4xl font-normal leading-[36px] sm:leading-[42px] lg:leading-[48px]">
+                  {project.showcaseBlocks.section2.title}
+                </h2>
+                <p className="w-full text-zinc-900 text-[16px] sm:text-[18px] lg:text-xl font-normal leading-[26px] sm:leading-[30px] lg:leading-8">
+                  {project.showcaseBlocks.section2.description}
+                </p>
+              </div>
+
+              {/* Images Grid Stack */}
+              <div className="w-full flex flex-col justify-start items-start gap-[16px] sm:gap-[20px]">
+                {/* 1. Asymmetrical Row (661px + 1038px, height 574px) */}
+                <div className="w-full flex flex-col lg:flex-row items-stretch gap-[20px]">
+                  <div className="w-full lg:w-[661px] aspect-[661/574] overflow-hidden bg-neutral-100 flex-shrink-0">
+                    <img
+                      src={project.showcaseBlocks.section2.images.splitLeft}
+                      alt={`${project.title} detail item 1`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full lg:flex-1 aspect-[1038/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section2.images.splitRight}
+                      alt={`${project.title} detail item 2`}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+
+                {/* 2. Row of 2 Images (850x574 each) */}
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section2.images.row1Left}
+                      alt={`${project.title} detail item 3`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section2.images.row1Right}
+                      alt={`${project.title} detail item 4`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                {/* 3. Row of 2 Images (850x574 each) */}
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section2.images.row2Left}
+                      alt={`${project.title} detail item 5`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.showcaseBlocks.section2.images.row2Right}
+                      alt={`${project.title} detail item 6`}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                {/* 4. Bottom Large Banner (1720x1162) */}
+                <div className="w-full overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.showcaseBlocks.section2.images.bottomBanner}
+                    alt={`${project.title} detail large banner`}
+                    className="w-full h-auto object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </section>
       )}
 

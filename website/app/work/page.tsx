@@ -18,6 +18,14 @@ const projects: Project[] = [
   },
   {
     id: "2",
+    title: "Sagehill",
+    slug: "sagehill",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image:
+      "/projects/sagehill/sage1.webp",
+  },
+  {
+    id: "3",
     title: "KMCH Healthcare - Intervention Radiology",
     slug: "kmch-healthcare",
     categories: ["Coffee table Book", "Event design"],

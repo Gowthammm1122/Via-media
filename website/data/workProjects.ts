@@ -30,6 +30,35 @@ export interface ProjectCaseStudy {
       bottomLarge: string;
     };
   };
+  showcaseBlocks?: {
+    section1?: {
+      title: string;
+      description: string;
+      images: {
+        banner1: string;
+        banner2: string;
+        row1Left: string;
+        row1Right: string;
+        banner3: string;
+        banner4: string;
+        row2Left: string;
+        row2Right: string;
+      };
+    };
+    section2?: {
+      title: string;
+      description: string;
+      images: {
+        splitLeft: string;
+        splitRight: string;
+        row1Left: string;
+        row1Right: string;
+        row2Left: string;
+        row2Right: string;
+        bottomBanner: string;
+      };
+    };
+  };
   learningsCTA?: {
     badge?: string;
     mainText?: string;
@@ -90,6 +119,87 @@ export const projectsData: Record<string, ProjectCaseStudy> = {
         middleRight: "/projects/fiore/fiore 4.webp",
         bottomLarge: "/projects/fiore/fiore 6.webp",
       },
+    },
+  },
+  sagehill: {
+    slug: "sagehill",
+    title: "Sagehill",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/sagehill/sage1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    showcaseBlocks: {
+      section1: {
+        title: "Technical without becoming cold.",
+        description:
+          "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+        images: {
+          banner1: "/projects/sagehill/sage2.webp",
+          banner2: "/projects/sagehill/sage3.webp",
+          row1Left: "/projects/sagehill/sage4.webp",
+          row1Right: "/projects/sagehill/sage5.webp",
+          banner3: "/projects/sagehill/sage6.webp",
+          banner4: "/projects/sagehill/sage7.webp",
+          row2Left: "/projects/sagehill/sage8.webp",
+          row2Right: "/projects/sagehill/sage9.webp",
+        },
+      },
+      section2: {
+        title: "Making Energy",
+        description:
+          "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+        images: {
+          splitLeft: "/projects/sagehill/sage10.webp",
+          splitRight: "/projects/sagehill/sage11.webp",
+          row1Left: "/projects/sagehill/sage12.webp",
+          row1Right: "/projects/sagehill/sage13.webp",
+          row2Left: "/projects/sagehill/sage14.webp",
+          row2Right: "/projects/sagehill/sage15.webp",
+          bottomBanner: "/projects/sagehill/sage16.webp",
+        },
+      },
+    },
+    learningsCTA: {
+      badge: "KEY LEARNING",
+      mainText: "Deep-tech value must be translated into commercial certainty.",
+      highlightText: "Clear narratives outperform complex feature lists every time.",
+      bannerSubheading: "READY TO ELEVATE YOUR TECH BRAND?",
+      bannerHeading: "Let's build clarity together.",
+      ctaText: "Start a conversation",
+      ctaHref: "/contact",
     },
   },
   "kmch-healthcare": {
