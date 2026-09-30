@@ -59,6 +59,21 @@ export interface ProjectCaseStudy {
       };
     };
   };
+  aspirationSection?: {
+    title: string;
+    description: string;
+    images: {
+      banner1: string;
+      banner2: string;
+      row1Left: string;
+      row1Right: string;
+      row2Left: string;
+      row2Right: string;
+      banner3: string;
+      row3Left: string;
+      row3Right: string;
+    };
+  };
   learningsCTA?: {
     badge?: string;
     mainText?: string;
@@ -252,6 +267,120 @@ export const projectsData: Record<string, ProjectCaseStudy> = {
     },
     heroImage:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=85",
+  },
+  "aspirational-homes": {
+    slug: "aspirational-homes",
+    title: "Aspirational Homes",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/aspiration/a1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    aspirationSection: {
+      title: "Technical without becoming cold.",
+      description:
+        "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+      images: {
+        banner1: "/projects/aspiration/a2.webp",
+        banner2: "/projects/aspiration/a3.webp",
+        row1Left: "/projects/aspiration/a4.webp",
+        row1Right: "/projects/aspiration/a5.webp",
+        row2Left: "/projects/aspiration/a6.webp",
+        row2Right: "/projects/aspiration/a7.webp",
+        banner3: "/projects/aspiration/a8.webp",
+        row3Left: "/projects/aspiration/a9.webp",
+        row3Right: "/projects/aspiration/a10.webp",
+      },
+    },
+  },
+  aspiration: {
+    slug: "aspiration",
+    title: "Aspirational Homes",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/aspiration/a1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    aspirationSection: {
+      title: "Technical without becoming cold.",
+      description:
+        "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+      images: {
+        banner1: "/projects/aspiration/a2.webp",
+        banner2: "/projects/aspiration/a3.webp",
+        row1Left: "/projects/aspiration/a4.webp",
+        row1Right: "/projects/aspiration/a5.webp",
+        row2Left: "/projects/aspiration/a6.webp",
+        row2Right: "/projects/aspiration/a7.webp",
+        banner3: "/projects/aspiration/a8.webp",
+        row3Left: "/projects/aspiration/a9.webp",
+        row3Right: "/projects/aspiration/a10.webp",
+      },
+    },
   },
 };
 

@@ -47,39 +47,39 @@ export default async function WorkDetailPage({ params }: PageProps) {
         heroImageAlt={project.title}
       />
 
-      {/* Case Study Specific Section: Problem & Pillars (Fiore Layout in exact px) */}
+      {/* Case Study Specific Section: Problem & Pillars (Responsive on Mobile, Tablet, Laptop, Desktop) */}
       {project.problemSection && (
-        <section className="w-full max-w-[1720px] mx-auto pt-[40px] sm:pt-[80px] pb-[80px] sm:pb-[120px]">
+        <section className="w-full max-w-[1720px] mx-auto pt-[40px] sm:pt-[60px] lg:pt-[80px] pb-[60px] sm:pb-[90px] lg:pb-[120px]">
           
           {/* Section Heading & Subheading: max-w-[1285px] */}
           <div className="w-full max-w-[1285px] flex flex-col items-start">
-            <h2 className="text-neutral-900 text-[28px] sm:text-[38px] lg:text-[48px] font-normal leading-[34px] sm:leading-[44px] lg:leading-[48px]">
+            <h2 className="text-neutral-900 text-[26px] sm:text-[34px] md:text-[38px] lg:text-[48px] font-normal leading-[32px] sm:leading-[40px] md:leading-[44px] lg:leading-[48px]">
               {project.problemSection.heading}
             </h2>
-            <p className="w-full max-w-[850px] text-zinc-900 text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[26px] sm:leading-[30px] lg:leading-[32px] mt-[20px]">
+            <p className="w-full max-w-[850px] text-zinc-900 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-normal leading-[24px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] mt-[16px] sm:mt-[20px]">
               {project.problemSection.subheading}
             </p>
           </div>
 
-          {/* 3 Pillars Row: cards with exact 20px gap, 492px width, border-zinc-300 */}
-          <div className="flex flex-col lg:flex-row items-stretch justify-start gap-[20px] mt-[48px] sm:mt-[60px]">
+          {/* 3 Pillars Grid: 1 col on mobile, 2 cols on tablet, 3 cols on desktop (max-w 492px, 20px gap) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] w-full mt-[36px] sm:mt-[48px] lg:mt-[60px]">
             {project.problemSection.cards.map((card, idx) => (
               <div
                 key={idx}
-                className="w-full lg:w-[492px] min-h-[288px] px-[32px] pt-[40px] pb-[36px] bg-white border border-zinc-300 flex flex-col justify-start flex-shrink-0"
+                className="w-full min-h-[240px] sm:min-h-[288px] p-[24px] sm:px-[28px] sm:py-[32px] lg:px-[32px] lg:pt-[40px] lg:pb-[36px] bg-white border border-zinc-300 flex flex-col justify-start"
               >
-                {/* Tag: 16px font, 32px leading */}
-                <span className="text-zinc-500 text-[16px] leading-[32px] font-normal tracking-wide uppercase">
+                {/* Tag */}
+                <span className="text-zinc-500 text-[14px] sm:text-[16px] leading-[24px] sm:leading-[32px] font-normal tracking-wide uppercase">
                   {card.tag}
                 </span>
 
-                {/* Card Title: 30px font, 48px leading */}
-                <h3 className="text-zinc-900 text-[24px] sm:text-[28px] lg:text-[30px] font-normal leading-[32px] sm:leading-[40px] lg:leading-[48px] mt-[4px]">
+                {/* Card Title */}
+                <h3 className="text-zinc-900 text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-normal leading-[28px] sm:leading-[34px] md:leading-[38px] lg:leading-[48px] mt-[4px]">
                   {card.title}
                 </h3>
 
-                {/* Card Description: 20px font, 32px leading */}
-                <p className="text-neutral-600 text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[26px] sm:leading-[30px] lg:leading-[32px] mt-[12px]">
+                {/* Card Description */}
+                <p className="text-neutral-600 text-[15px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-normal leading-[24px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] mt-[10px] sm:mt-[12px]">
                   {card.description}
                 </p>
               </div>
@@ -311,6 +311,110 @@ export default async function WorkDetailPage({ params }: PageProps) {
               </div>
             </div>
           )}
+        </section>
+      )}
+
+      {/* Aspirational Homes Custom Showcase Section (pt-[117px] on desktop with responsive mobile/tablet scaling) */}
+      {project.aspirationSection && (
+        <section className="w-full max-w-[1720px] mx-auto pt-[40px] sm:pt-[70px] lg:pt-[117px] pb-[60px] sm:pb-[90px] lg:pb-[140px] flex flex-col justify-start items-start gap-8 sm:gap-11 lg:gap-14">
+          {/* Header Title + Description: max-w-[1140px] */}
+          <div className="w-full max-w-[1140px] flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-7">
+            <h2 className="self-stretch text-neutral-900 text-[24px] sm:text-[30px] md:text-[34px] lg:text-4xl font-normal leading-[32px] sm:leading-[38px] md:leading-[42px] lg:leading-[48px]">
+              {project.aspirationSection.title}
+            </h2>
+            <p className="self-stretch text-zinc-900 text-[15px] sm:text-[17px] md:text-[18px] lg:text-xl font-normal leading-[24px] sm:leading-[28px] md:leading-[30px] lg:leading-8">
+              {project.aspirationSection.description}
+            </p>
+          </div>
+
+          {/* Images Stack */}
+          <div className="w-full self-stretch flex flex-col justify-start items-start gap-4">
+            <div className="self-stretch flex flex-col justify-start items-start gap-5">
+              <div className="self-stretch flex flex-col justify-start items-start gap-5">
+                {/* 2 Full-width Banners */}
+                <div className="self-stretch flex flex-col justify-start items-start gap-3.5">
+                  <div className="w-full overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.aspirationSection.images.banner1}
+                      alt={`${project.title} showcase banner 1`}
+                      className="w-full h-auto object-cover object-center"
+                    />
+                  </div>
+                  <div className="w-full overflow-hidden bg-neutral-100">
+                    <img
+                      src={project.aspirationSection.images.banner2}
+                      alt={`${project.title} showcase banner 2`}
+                      className="w-full h-auto object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                {/* 2 Rows of 2 side-by-side Images (850x574) */}
+                <div className="self-stretch flex flex-col justify-start items-start gap-5">
+                  <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        src={project.aspirationSection.images.row1Left}
+                        alt={`${project.title} showcase item 1`}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        src={project.aspirationSection.images.row1Right}
+                        alt={`${project.title} showcase item 2`}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        src={project.aspirationSection.images.row2Left}
+                        alt={`${project.title} showcase item 3`}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        src={project.aspirationSection.images.row2Right}
+                        alt={`${project.title} showcase item 4`}
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Banner 3 */}
+              <div className="w-full overflow-hidden bg-neutral-100">
+                <img
+                  src={project.aspirationSection.images.banner3}
+                  alt={`${project.title} showcase banner 3`}
+                  className="w-full h-auto object-cover object-center"
+                />
+              </div>
+            </div>
+
+            {/* Row 3: 2 side-by-side Images (850x574) */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                <img
+                  src={project.aspirationSection.images.row3Left}
+                  alt={`${project.title} showcase item 5`}
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                <img
+                  src={project.aspirationSection.images.row3Right}
+                  alt={`${project.title} showcase item 6`}
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
         </section>
       )}
 
