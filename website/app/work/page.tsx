@@ -33,6 +33,20 @@ const projects: Project[] = [
   },
   {
     id: "4",
+    title: "Last Forest",
+    slug: "lastforest",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image: "/projects/lastforest/last1.webp",
+  },
+  {
+    id: "5",
+    title: "GD Car Museum",
+    slug: "gd-car-museum",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image: "/projects/gdcar/gd1.webp",
+  },
+  {
+    id: "6",
     title: "KMCH Healthcare - Intervention Radiology",
     slug: "kmch-healthcare",
     categories: ["Coffee table Book", "Event design"],

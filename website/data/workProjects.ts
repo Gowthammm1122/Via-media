@@ -74,6 +74,16 @@ export interface ProjectCaseStudy {
       row3Right: string;
     };
   };
+  carMuseumSection?: {
+    images: {
+      topBanner: string;
+      row1Left: string;
+      row1Right: string;
+      row2Left: string;
+      row2Right: string;
+      bottomBanner: string;
+    };
+  };
   learningsCTA?: {
     badge?: string;
     mainText?: string;
@@ -379,6 +389,273 @@ export const projectsData: Record<string, ProjectCaseStudy> = {
         banner3: "/projects/aspiration/a8.webp",
         row3Left: "/projects/aspiration/a9.webp",
         row3Right: "/projects/aspiration/a10.webp",
+      },
+    },
+  },
+  lastforest: {
+    slug: "lastforest",
+    title: "Last Forest",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/lastforest/last1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    aspirationSection: {
+      title: "Technical without becoming cold.",
+      description:
+        "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+      images: {
+        banner1: "/projects/lastforest/last2.webp",
+        banner2: "/projects/lastforest/last3.webp",
+        row1Left: "/projects/lastforest/last4.webp",
+        row1Right: "/projects/lastforest/last5.webp",
+        row2Left: "/projects/lastforest/last6.webp",
+        row2Right: "/projects/lastforest/last7.webp",
+        banner3: "/projects/lastforest/last8.webp",
+        row3Left: "/projects/lastforest/last9.webp",
+        row3Right: "/projects/lastforest/last10.webp",
+      },
+    },
+  },
+  "last-forest": {
+    slug: "lastforest",
+    title: "Last Forest",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/lastforest/last1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    aspirationSection: {
+      title: "Technical without becoming cold.",
+      description:
+        "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+      images: {
+        banner1: "/projects/lastforest/last2.webp",
+        banner2: "/projects/lastforest/last3.webp",
+        row1Left: "/projects/lastforest/last4.webp",
+        row1Right: "/projects/lastforest/last5.webp",
+        row2Left: "/projects/lastforest/last6.webp",
+        row2Right: "/projects/lastforest/last7.webp",
+        banner3: "/projects/lastforest/last8.webp",
+        row3Left: "/projects/lastforest/last9.webp",
+        row3Right: "/projects/lastforest/last10.webp",
+      },
+    },
+  },
+  "gd-car-museum": {
+    slug: "gd-car-museum",
+    title: "GD Car Museum",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/gdcar/gd1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    carMuseumSection: {
+      images: {
+        topBanner: "/projects/gdcar/gd2.webp",
+        row1Left: "/projects/gdcar/gd3.webp",
+        row1Right: "/projects/gdcar/gd4.webp",
+        row2Left: "/projects/gdcar/gd5.webp",
+        row2Right: "/projects/gdcar/gd6.webp",
+        bottomBanner: "/projects/gdcar/gd7.webp",
+      },
+    },
+  },
+  gdcar: {
+    slug: "gd-car-museum",
+    title: "GD Car Museum",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/gdcar/gd1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    carMuseumSection: {
+      images: {
+        topBanner: "/projects/gdcar/gd2.webp",
+        row1Left: "/projects/gdcar/gd3.webp",
+        row1Right: "/projects/gdcar/gd4.webp",
+        row2Left: "/projects/gdcar/gd5.webp",
+        row2Right: "/projects/gdcar/gd6.webp",
+        bottomBanner: "/projects/gdcar/gd7.webp",
+      },
+    },
+  },
+  "gd-car": {
+    slug: "gd-car-museum",
+    title: "GD Car Museum",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/gdcar/gd1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    carMuseumSection: {
+      images: {
+        topBanner: "/projects/gdcar/gd2.webp",
+        row1Left: "/projects/gdcar/gd3.webp",
+        row1Right: "/projects/gdcar/gd4.webp",
+        row2Left: "/projects/gdcar/gd5.webp",
+        row2Right: "/projects/gdcar/gd6.webp",
+        bottomBanner: "/projects/gdcar/gd7.webp",
       },
     },
   },

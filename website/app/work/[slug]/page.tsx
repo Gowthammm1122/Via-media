@@ -418,6 +418,70 @@ export default async function WorkDetailPage({ params }: PageProps) {
         </section>
       )}
 
+      {/* GD Car Museum Custom Showcase Section */}
+      {project.carMuseumSection && (
+        <section className="w-full max-w-[1720px] mx-auto pt-[40px] sm:pt-[70px] lg:pt-[100px] pb-[60px] sm:pb-[90px] lg:pb-[140px] flex flex-col justify-start items-start gap-8 sm:gap-11">
+          <div className="w-full flex flex-col justify-start items-start gap-5">
+            {/* Top Full-width Banner */}
+            <div className="w-full overflow-hidden bg-neutral-100">
+              <img
+                src={project.carMuseumSection.images.topBanner}
+                alt={`${project.title} showcase banner 1`}
+                className="w-full h-auto object-cover object-center"
+              />
+            </div>
+
+            {/* Middle Grid: 2 rows of 2 images (850x502) */}
+            <div className="w-full flex flex-col justify-start items-start gap-5">
+              {/* Row 1 */}
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="w-full aspect-[850/502] overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.carMuseumSection.images.row1Left}
+                    alt={`${project.title} showcase item 1`}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="w-full aspect-[850/502] overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.carMuseumSection.images.row1Right}
+                    alt={`${project.title} showcase item 2`}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+
+              {/* Row 2 */}
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="w-full aspect-[850/502] overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.carMuseumSection.images.row2Left}
+                    alt={`${project.title} showcase item 3`}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="w-full aspect-[850/502] overflow-hidden bg-neutral-100">
+                  <img
+                    src={project.carMuseumSection.images.row2Right}
+                    alt={`${project.title} showcase item 4`}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Full-width Banner */}
+          <div className="w-full overflow-hidden bg-neutral-100">
+            <img
+              src={project.carMuseumSection.images.bottomBanner}
+              alt={`${project.title} showcase bottom banner`}
+              className="w-full h-auto object-cover object-center"
+            />
+          </div>
+        </section>
+      )}
+
       {/* Reusable Learnings & CTA Banner Section */}
       <LearningsCTA
         badge={project.learningsCTA?.badge}
