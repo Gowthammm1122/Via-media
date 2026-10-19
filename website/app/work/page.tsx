@@ -47,6 +47,27 @@ const projects: Project[] = [
   },
   {
     id: "6",
+    title: "The Abode",
+    slug: "abode",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image: "/projects/abode/abode1.webp",
+  },
+  {
+    id: "7",
+    title: "Vanguard",
+    slug: "vanguard",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image: "/projects/vanguard/van1.webp",
+  },
+  {
+    id: "8",
+    title: "Mango",
+    slug: "mango",
+    categories: ["Industrial B2B", "Energy Technology"],
+    image: "/projects/mango/mango1.webp",
+  },
+  {
+    id: "9",
     title: "KMCH Healthcare - Intervention Radiology",
     slug: "kmch-healthcare",
     categories: ["Coffee table Book", "Event design"],

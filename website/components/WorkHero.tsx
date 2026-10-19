@@ -45,7 +45,7 @@ export default function WorkHero({
             )}
 
             {/* Title: 72px / 90px leading */}
-            <h1 className="max-w-[1000px] text-zinc-900 text-[36px] sm:text-[54px] lg:text-[72px] font-normal leading-[44px] sm:leading-[64px] lg:leading-[90px] tracking-normal">
+            <h1 className="max-w-[1000px] text-zinc-900 text-[36px] sm:text-[54px] lg:text-[80px] font-normal leading-[44px] sm:leading-[64px] lg:leading-[90px] tracking-normal">
               <span>{titlePrefix} </span>
               <span className="text-[#2ABCFF]">{titleHighlight}</span>
             </h1>

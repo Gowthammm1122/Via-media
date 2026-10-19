@@ -84,6 +84,48 @@ export interface ProjectCaseStudy {
       bottomBanner: string;
     };
   };
+  abodeSection?: {
+    section1: {
+      title: string;
+      image1: string;
+      image2: string;
+      image3: string;
+    };
+    section2: {
+      title: string;
+      description: string;
+      image1: string;
+      image2: string;
+    };
+  };
+  vanguardSection?: {
+    section1: {
+      banner1: string;
+      row1Left: string;
+      row1Right: string;
+      banner2: string;
+      row2Left: string;
+      row2Right: string;
+    };
+    section2: {
+      title: string;
+      description: string;
+      banner1: string;
+      row1Left: string;
+      row1Right: string;
+      banner2: string;
+      row2Left: string;
+      row2Right: string;
+    };
+  };
+  mangoSection?: {
+    banner1: string;
+    row1Left: string;
+    row1Right: string;
+    banner2: string;
+    row2Left: string;
+    row2Right: string;
+  };
   learningsCTA?: {
     badge?: string;
     mainText?: string;
@@ -657,6 +699,269 @@ export const projectsData: Record<string, ProjectCaseStudy> = {
         row2Right: "/projects/gdcar/gd6.webp",
         bottomBanner: "/projects/gdcar/gd7.webp",
       },
+    },
+  },
+  abode: {
+    slug: "abode",
+    title: "The Abode",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/abode/abode1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    abodeSection: {
+      section1: {
+        title: "Technical without becoming cold.",
+        image1: "/projects/abode/abode2.webp",
+        image2: "/projects/abode/abode3.webp",
+        image3: "/projects/abode/abode4.webp",
+      },
+      section2: {
+        title: "Making Energy",
+        description:
+          "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+        image1: "/projects/abode/abode5.webp",
+        image2: "/projects/abode/abode6.webp",
+      },
+    },
+    learningsCTA: {
+      badge: "WHAT WE LEARNED",
+      mainText:
+        "In complex B2B categories, the job of brand is not to make the technology look intelligent. It is to make the ",
+      highlightText: "decision feel simpler.",
+      bannerSubheading: "Frame the decision.",
+      bannerHeading: "Then build what proves it.",
+      ctaText: "Start a Beta",
+      ctaHref: "/contact",
+    },
+  },
+  "the-abode": {
+    slug: "abode",
+    title: "The Abode",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/abode/abode1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    abodeSection: {
+      section1: {
+        title: "Technical without becoming cold.",
+        image1: "/projects/abode/abode2.webp",
+        image2: "/projects/abode/abode3.webp",
+        image3: "/projects/abode/abode4.webp",
+      },
+      section2: {
+        title: "Making Energy",
+        description:
+          "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+        image1: "/projects/abode/abode5.webp",
+        image2: "/projects/abode/abode6.webp",
+      },
+    },
+    learningsCTA: {
+      badge: "WHAT WE LEARNED",
+      mainText:
+        "In complex B2B categories, the job of brand is not to make the technology look intelligent. It is to make the ",
+      highlightText: "decision feel simpler.",
+      bannerSubheading: "Frame the decision.",
+      bannerHeading: "Then build what proves it.",
+      ctaText: "Start a Beta",
+      ctaHref: "/contact",
+    },
+  },
+  vanguard: {
+    slug: "vanguard",
+    title: "Vanguard",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/vanguard/van1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    vanguardSection: {
+      section1: {
+        banner1: "/projects/vanguard/van2.webp",
+        row1Left: "/projects/vanguard/van3.webp",
+        row1Right: "/projects/vanguard/van4.webp",
+        banner2: "/projects/vanguard/van5.webp",
+        row2Left: "/projects/vanguard/van6.webp",
+        row2Right: "/projects/vanguard/van7.webp",
+      },
+      section2: {
+        title: "Making Energy",
+        description:
+          "The digital design carried the same logic forward: establish relevance first, then allow the user to move into technology, industries, use-cases and proof. The interface uses large areas of whitespace, restrained navigation and modular information blocks so the complexity is contained rather than exposed all at once.",
+        banner1: "/projects/vanguard/van8.webp",
+        row1Left: "/projects/vanguard/van9.webp",
+        row1Right: "/projects/vanguard/van10.webp",
+        banner2: "/projects/vanguard/van11.webp",
+        row2Left: "/projects/vanguard/van12.webp",
+        row2Right: "/projects/vanguard/van13.webp",
+      },
+    },
+    learningsCTA: {
+      badge: "WHAT WE LEARNED",
+      mainText:
+        "In complex B2B categories, the job of brand is not to make the technology look intelligent. It is to make the ",
+      highlightText: "decision feel simpler.",
+      bannerSubheading: "Frame the decision.",
+      bannerHeading: "Then build what proves it.",
+      ctaText: "Start a Beta",
+      ctaHref: "/contact",
+    },
+  },
+  mango: {
+    slug: "mango",
+    title: "Mango",
+    tagline: "Industrial B2B  ·  Energy Technology",
+    titlePrefix: "Simplifying intelligence for",
+    titleHighlight: "smarter energy decisions.",
+    description:
+      "Theiox was an intelligent energy-management and predictive-AI platform entering a category where technical complexity could easily outrun buyer understanding. The assignment was not simply to make the brand look smarter. It was to make the intelligence easier to grasp, easier to trust, and easier to buy.",
+    meta: {
+      client: "Sankara",
+      category: "Energy Management + Predictive AI",
+      engagement: "Strategy . Brochure",
+      execution: "Viamedia",
+    },
+    heroImage: "/projects/mango/mango1.webp",
+    problemSection: {
+      heading: "The problem was not intelligence. It was translation.",
+      subheading:
+        "Theiox combined energy management with predictive AI — a proposition with strong technical depth, but one that risked becoming abstract for business buyers.",
+      cards: [
+        {
+          tag: "COMPLEXITY",
+          title: "Too much to explain",
+          description:
+            "AI, energy intelligence, analytics and optimisation can quickly become a feature stack instead of a business case.",
+        },
+        {
+          tag: "TRUST",
+          title: "High proof threshold",
+          description:
+            "Enterprise energy decisions require clarity, confidence and a professional system across every touchpoint.",
+        },
+        {
+          tag: "RELEVANCE",
+          title: "Value had to land fast",
+          description:
+            "The story needed to move from technical capability to better decisions, lower friction and clearer operational value.",
+        },
+      ],
+    },
+    mangoSection: {
+      banner1: "/projects/mango/mango2.webp",
+      row1Left: "/projects/mango/mango3.webp",
+      row1Right: "/projects/mango/mango4.webp",
+      banner2: "/projects/mango/mango5.webp",
+      row2Left: "/projects/mango/mango6.webp",
+      row2Right: "/projects/mango/mango7.webp",
+    },
+    learningsCTA: {
+      badge: "WHAT WE LEARNED",
+      mainText:
+        "In complex B2B categories, the job of brand is not to make the technology look intelligent. It is to make the ",
+      highlightText: "decision feel simpler.",
+      bannerSubheading: "Frame the decision.",
+      bannerHeading: "Then build what proves it.",
+      ctaText: "Start a Beta",
+      ctaHref: "/contact",
     },
   },
 };

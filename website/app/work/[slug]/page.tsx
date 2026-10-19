@@ -482,6 +482,231 @@ export default async function WorkDetailPage({ params }: PageProps) {
         </section>
       )}
 
+      {/* Abode Custom Showcase Section (Exact layout provided by user) */}
+      {project.abodeSection && (
+        <section className="w-full max-w-[1720px] mx-auto flex flex-col justify-start items-start gap-16 sm:gap-24 lg:gap-36 pb-[80px] sm:pb-[140px]">
+          {/* Block 1: Technical without becoming cold. */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-5 sm:gap-7">
+            <h2 className="self-stretch justify-center text-neutral-900 text-2xl sm:text-3xl lg:text-4xl font-normal leading-tight sm:leading-[40px] lg:leading-[48px]">
+              {project.abodeSection.section1.title}
+            </h2>
+            <div className="self-stretch flex flex-col justify-start items-start gap-3.5">
+              <div className="self-stretch flex flex-col justify-start items-start gap-3">
+                <img
+                  src={project.abodeSection.section1.image1}
+                  alt={`${project.title} - Technical without becoming cold 1`}
+                  className="self-stretch w-full h-auto object-cover object-center"
+                />
+                <img
+                  src={project.abodeSection.section1.image2}
+                  alt={`${project.title} - Technical without becoming cold 2`}
+                  className="self-stretch w-full h-auto object-cover object-center"
+                />
+              </div>
+              <img
+                src={project.abodeSection.section1.image3}
+                alt={`${project.title} - Technical without becoming cold 3`}
+                className="self-stretch w-full h-auto object-cover object-center"
+              />
+            </div>
+          </div>
+
+          {/* Block 2: Making Energy */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-5">
+            <div className="w-full max-w-[1140px] flex flex-col justify-start items-start gap-4 sm:gap-5">
+              <h2 className="self-stretch justify-center text-neutral-900 text-2xl sm:text-3xl lg:text-4xl font-normal leading-tight sm:leading-[40px] lg:leading-[48px]">
+                {project.abodeSection.section2.title}
+              </h2>
+              <p className="self-stretch min-h-0 lg:min-h-28 justify-start text-zinc-900 text-base sm:text-lg lg:text-xl font-normal leading-relaxed sm:leading-8">
+                {project.abodeSection.section2.description}
+              </p>
+            </div>
+            <div className="self-stretch flex flex-col justify-start items-start gap-3.5 sm:gap-5">
+              <img
+                src={project.abodeSection.section2.image1}
+                alt={`${project.title} - Making Energy 1`}
+                className="self-stretch w-full h-auto object-cover object-center"
+              />
+              <img
+                src={project.abodeSection.section2.image2}
+                alt={`${project.title} - Making Energy 2`}
+                className="self-stretch w-full h-auto object-cover object-center"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Vanguard Custom Showcase Section */}
+      {project.vanguardSection && (
+        <section className="w-full max-w-[1720px] mx-auto flex flex-col justify-start items-start gap-16 sm:gap-20 lg:gap-28 pb-[80px] sm:pb-[140px]">
+          {/* Section 1 */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-5">
+            <div className="self-stretch flex flex-col justify-start items-start gap-6">
+              <div className="self-stretch flex flex-col justify-start items-start gap-6">
+                <img
+                  className="self-stretch w-full h-auto object-cover object-center"
+                  src={project.vanguardSection.section1.banner1}
+                  alt={`${project.title} showcase 1`}
+                />
+                <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      className="w-full h-full object-cover object-center"
+                      src={project.vanguardSection.section1.row1Left}
+                      alt={`${project.title} showcase 2`}
+                    />
+                  </div>
+                  <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                    <img
+                      className="w-full h-full object-cover object-center"
+                      src={project.vanguardSection.section1.row1Right}
+                      alt={`${project.title} showcase 3`}
+                    />
+                  </div>
+                </div>
+              </div>
+              <img
+                className="self-stretch w-full h-auto object-cover object-center"
+                src={project.vanguardSection.section1.banner2}
+                alt={`${project.title} showcase 4`}
+              />
+            </div>
+            <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                <img
+                  className="w-full h-full object-cover object-center"
+                  src={project.vanguardSection.section1.row2Left}
+                  alt={`${project.title} showcase 5`}
+                />
+              </div>
+              <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                <img
+                  className="w-full h-full object-cover object-center"
+                  src={project.vanguardSection.section1.row2Right}
+                  alt={`${project.title} showcase 6`}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Section 2: Making Energy */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-12 sm:gap-16 lg:gap-20">
+            <div className="w-full max-w-[1140px] flex flex-col justify-start items-start gap-4 sm:gap-5">
+              <h2 className="self-stretch justify-center text-neutral-900 text-2xl sm:text-3xl lg:text-4xl font-normal font-['Suisse_Intl_Trial',sans-serif] leading-tight sm:leading-[40px] lg:leading-[48px]">
+                {project.vanguardSection.section2.title}
+              </h2>
+              <p className="self-stretch justify-start text-zinc-900 text-base sm:text-lg lg:text-xl font-normal font-['Suisse_Intl',sans-serif] leading-relaxed sm:leading-8">
+                {project.vanguardSection.section2.description}
+              </p>
+            </div>
+            <div className="self-stretch flex flex-col justify-start items-start gap-6">
+              <div className="self-stretch flex flex-col justify-start items-start gap-6">
+                <div className="self-stretch flex flex-col justify-start items-start gap-6">
+                  <img
+                    className="self-stretch w-full h-auto object-cover object-center"
+                    src={project.vanguardSection.section2.banner1}
+                    alt={`${project.title} showcase 7`}
+                  />
+                  <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        className="w-full h-full object-cover object-center"
+                        src={project.vanguardSection.section2.row1Left}
+                        alt={`${project.title} showcase 8`}
+                      />
+                    </div>
+                    <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                      <img
+                        className="w-full h-full object-cover object-center"
+                        src={project.vanguardSection.section2.row1Right}
+                        alt={`${project.title} showcase 9`}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="self-stretch w-full h-auto object-cover object-center"
+                  src={project.vanguardSection.section2.banner2}
+                  alt={`${project.title} showcase 10`}
+                />
+              </div>
+              <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    src={project.vanguardSection.section2.row2Left}
+                    alt={`${project.title} showcase 11`}
+                  />
+                </div>
+                <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    src={project.vanguardSection.section2.row2Right}
+                    alt={`${project.title} showcase 12`}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Mango Custom Showcase Section */}
+      {project.mangoSection && (
+        <section className="w-full max-w-[1720px] mx-auto flex flex-col justify-start items-start gap-3.5 pb-[80px] sm:pb-[140px]">
+          {/* Top Block: Banner + Row 1 (850x511) + Banner 2 (1720x984) */}
+          <div className="self-stretch flex flex-col justify-start items-start gap-5">
+            <div className="self-stretch flex flex-col justify-start items-start gap-3">
+              <img
+                className="self-stretch w-full h-auto object-cover object-center"
+                src={project.mangoSection.banner1}
+                alt={`${project.title} showcase 1`}
+              />
+              <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="w-full aspect-[850/511] overflow-hidden bg-neutral-100">
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    src={project.mangoSection.row1Left}
+                    alt={`${project.title} showcase 2`}
+                  />
+                </div>
+                <div className="w-full aspect-[850/511] overflow-hidden bg-neutral-100">
+                  <img
+                    className="w-full h-full object-cover object-center"
+                    src={project.mangoSection.row1Right}
+                    alt={`${project.title} showcase 3`}
+                  />
+                </div>
+              </div>
+            </div>
+            <img
+              className="self-stretch w-full h-auto object-cover object-center"
+              src={project.mangoSection.banner2}
+              alt={`${project.title} showcase 4`}
+            />
+          </div>
+
+          {/* Bottom Block: Row 2 (850x574) */}
+          <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+              <img
+                className="w-full h-full object-cover object-center"
+                src={project.mangoSection.row2Left}
+                alt={`${project.title} showcase 5`}
+              />
+            </div>
+            <div className="w-full aspect-[850/574] overflow-hidden bg-neutral-100">
+              <img
+                className="w-full h-full object-cover object-center"
+                src={project.mangoSection.row2Right}
+                alt={`${project.title} showcase 6`}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Reusable Learnings & CTA Banner Section */}
       <LearningsCTA
         badge={project.learningsCTA?.badge}
